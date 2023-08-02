@@ -67,6 +67,10 @@ main{
 
 
 /*  HOME.HTML */
+.img-banner{
+    width: 100vw;
+    height: 300px;
+}
  .style-article{  
     background-color: white;
     text-align: center;
@@ -159,11 +163,26 @@ main h2{
 .form-label-box{
     display: none;
 }
-
+.bn60 {
+    background-color: #212c7b;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 45px;
+    width: 140px;
+  }
 /*  FOOTER  */
 
 footer{
     text-align: center;
+}
+footer div{
+    display:flex;
+    margin-bottom: 10px;
 }
 .fa-user-shield{
     margin-bottom: 10px;
