@@ -47,26 +47,26 @@
             <form class="register-form" action="/" method="POST">
                 <h3>Crea tu cuenta</h3>
                 <div>
-                    <label class="form-label-box" for="nombre"></label>
-                    <input class="form-input-box" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                    <label class="form-label-box" for="nombre">Nombre y apellido</label>
+                    <input required min-length="8" class="form-input-box" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
                 </div>
                 <div>
-                    <label class="form-label-box" for="nickname"></label>
-                    <input class="form-input-box" type="text" name="nickname" id="nickname" placeholder="Nombre de usuario">
+                    <label class="form-label-box" for="nickname">Nombre de usuario</label>
+                    <input required min-length="8" class="form-input-box" type="text" name="nickname" id="nickname" placeholder="Nombre de usuario">
                 </div>
                 <div>
                     <label for="nacimiento">Fecha de nacimiento</label> 
-                    <input class="form-input-box" type="date" name="nacimiento" id="nacimiento">
+                    <input required class="form-input-box" type="date" name="nacimiento" id="nacimiento">
                 </div>
                 <div>
                     <label class="form-label-box" for="domicilio"></label> 
-                    <input class="form-input-box" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                    <input required class="form-input-box" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
                 </div>
                 <div>
                     <p>¿Quieres comprar o vender?</p> 
-                    <input type="radio" value="comprar" name="perfil" id="comprar">
+                    <input required type="radio" value="comprar" name="perfil" id="comprar">
                     <label for="comprar">Comprar</label>
-                    <input type="radio" value="vender" name="perfil" id="vender">
+                    <input required type="radio" value="vender" name="perfil" id="vender">
                     <label for="vender">Vender</label>
                 </div>
                 <div>
@@ -88,11 +88,11 @@
                 </div>
                 <div>
                     <label class="form-label-box" for="contrasena"></label>
-                    <input class="form-input-box" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+                    <input required min-length="8" class="form-input-box" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                 </div>
                 <div>
                     <label class="form-label-box" for="contrasena"></label>
-                    <input class="form-input-box" type="password" name="contrasena" id="contrasena" placeholder="Confirmar contraseña">
+                    <input required min-length="8" class="form-input-box" type="password" name="contrasena" id="contrasena" placeholder="Confirmar contraseña">
                 </div>
                 <div>
                     <button class="bn60" type="submit">Enviar</button>
@@ -101,24 +101,27 @@
             </form>
         </main>
         <footer>
-            <section>
-                <p><i class="fa-solid fa-credit-card"></i></p>
-                <p><strong>Paga con tarjeta o efectivo</strong></p>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-                <p></p>
-            </section>
-            <section>
-                <p><i class="fa-solid fa-gift"></i></p>
-                <p><strong>Envío gratis desde $ 2.500</strong></p>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-                <p></p>
-            </section>
-            <section>
-                <p><i class="fa-solid fa-user-shield"></i></p>
-                <p><strong>Seguridad, de principio a fin</strong></p>
-                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-                <p></p>
-            </section>
+            <div>
+                <section>
+                    <p><i class="fa-solid fa-credit-card"></i></p>
+                    <p><strong>Paga con tarjeta o efectivo</strong></p>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><i class="fa-solid fa-gift"></i></p>
+                    <p><strong>Envío gratis desde $ 2.500</strong></p>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><i class="fa-solid fa-user-shield"></i></p>
+                    <p><strong>Seguridad, de principio a fin</strong></p>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                    <p></p>
+                </section>
+            </div>
+            
             <section>
                 <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
             </section>

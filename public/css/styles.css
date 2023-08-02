@@ -53,9 +53,6 @@ header a{
     background-color: #212c7b;
     border-color: #212c7b;
 }
-.descripciones{
-    display: none;
-}
 .navbar{
     display: none;
 }
@@ -106,6 +103,9 @@ position: absolute;
 right: 20px;
 top: -15px;
 } 
+.fa-truck:hover{
+    rotate: 270deg;
+}
 .article-images{
     width: 70vw;
 }
@@ -131,6 +131,7 @@ main h2{
     font-size: 16px;
     color: gray;
     font-weight: normal;
+    display: none;
 }
 
 /* REGISTER */
@@ -175,13 +176,17 @@ main h2{
     height: 45px;
     width: 140px;
   }
+  
+  .bn60:hover{
+    background-color: #0022AA;
+  }
+
 /*  FOOTER  */
 
 footer{
     text-align: center;
 }
 footer div{
-    display:flex;
     margin-bottom: 10px;
 }
 .fa-user-shield{
@@ -205,7 +210,15 @@ footer{
 footer p{
     margin-bottom: 0;
 }
-
+.fa-credit-card:hover{
+    color: #0022AA;
+}
+.fa-gift:hover{
+    color: #0022AA;
+}
+.fa-user-shield{
+    color: #0022AA;
+}
 /* tableta */ 
 @media (min-width: 769px){
     header .burger-menu{
@@ -227,9 +240,11 @@ footer p{
         flex-wrap: wrap;
         width: 40%;
     }
-
-    .descripciones{
-        display: inline;
+    .style-article:hover{
+        box-shadow: 10px 5px 5px gray;
+    }
+    .total-price:hover + .descripciones{
+        display: block;
     }
     .navbar{
         display: block;
@@ -240,16 +255,17 @@ footer p{
     .article-images{
         width: 40vw;
     }
+
 }
 /* 1024px desktop */
 @media (min-width: 1024px){
-    .descripciones{
-        display: inline;
-    }
     .article-images{
         width: 20vw;
     }
     .navbar{
         display: block;
+    }
+    footer div{
+        display: flex;
     }
 }
