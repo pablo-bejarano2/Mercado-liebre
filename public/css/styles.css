@@ -49,7 +49,8 @@ header a{
     text-align: center;
 }
 .burger-menu button{
-    width: 2em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: #212c7b;
     border-color: #212c7b;
 }
@@ -109,6 +110,9 @@ top: -15px;
 .article-images{
     width: 70vw;
 }
+.style-article:hover{
+    box-shadow: 10px 5px 5px gray;
+}
 main h2{
     font-size: 24px;
     text-align: center;
@@ -120,6 +124,9 @@ main h2{
 .precio{
     font-size: 18px;
     width: 30%;
+}
+.total-price:hover + .descripciones{
+    display: block;
 }
 .descuento{
     font-size: 16px;
@@ -216,7 +223,7 @@ footer p{
 .fa-gift:hover{
     color: #0022AA;
 }
-.fa-user-shield{
+.fa-user-shield:hover{
     color: #0022AA;
 }
 /* tableta */ 
@@ -240,12 +247,8 @@ footer p{
         flex-wrap: wrap;
         width: 40%;
     }
-    .style-article:hover{
-        box-shadow: 10px 5px 5px gray;
-    }
-    .total-price:hover + .descripciones{
-        display: block;
-    }
+
+
     .navbar{
         display: block;
     }
@@ -268,4 +271,7 @@ footer p{
     footer div{
         display: flex;
     }
+    header .search-bar input{
+        min-width: 17rem;
+       }
 }

@@ -18,7 +18,7 @@
     <body>
         <header>
             <section>
-                <img src="/images/logo-mercado-liebre.svg">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg"></a>
                 <form class="search-bar">
                     <input type="text" placeholder="Buscar productos, marcas.."> 
                         <button type="button"><i class="fa-solid fa-magnifying-glass">
@@ -48,11 +48,11 @@
                 <h3>Ingresa</h3>
                 <div>
                     <label class="form-label-box" for="nickname"></label>
-                    <input class="form-input-box" type="text" name="nickname" id="nickname" placeholder="Nombre de usuario">
+                    <input required minlength="8" class="form-input-box" type="text" name="nickname" id="nickname" placeholder="Nombre de usuario">
                 </div>
                 <div>
                     <label class="form-label-box" for="contrasena"></label>
-                    <input class="form-input-box" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+                    <input required minlength="8" class="form-input-box" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
                 </div>
                 <div>
                     <button class="bn60" type="submit">Enviar</button>
